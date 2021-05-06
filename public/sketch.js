@@ -29,12 +29,16 @@ function setup() {
   socket = io.connect('http://localhost:3000');
   socket.on('guess', makeAGuess);
 
-  slider = createSlider(7,30, 14, 1);
+  slider = createSlider(7,30, 0, 1);
   slider.position(width/2-70, 600);
   
   button = createButton('Press and speak');
   button.position(100, 520);
   button.mousePressed(startSpeak);
+
+  ss_button = createButton('Save Image');
+  ss_button.position(width-300, 250);
+  ss_button.mousePressed(saveImage);
 }
 
 
@@ -79,6 +83,10 @@ function makeAGuess(data){
     selected_list = ["👨‍👨‍👧","🤰🏻","👨‍👩‍👧","👵🏻","👶🏽"];
   }
  
+}
+
+function saveImage(){
+	saveCanvas(mycanvas,"emojiMirror","png");
 }
 
 function draw() {
