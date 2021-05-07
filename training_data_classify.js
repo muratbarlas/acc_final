@@ -40,21 +40,12 @@ var trends = {
     "football":"sports",
     "baseball":"sports",
 
-    "mom":"family",
-    "dad":"family",
-    "family":"family",
-    "sister":"family",
-    "brother":"family",
-    "son":"family",
-    "daughter":"family",
-    "husband":"family",
-    "wife":"family",
-
     "music":"music",
     "pop":"music",
     "rock":"music",
     "kpop":"music",
     "Camila Cabello":"music",
+    "iHeartAwards":"music",
 
 
     "AppleEvent" : "apple",
@@ -68,7 +59,16 @@ var trends = {
     "chefs":"food",
     "vegan":"food",
     "vegeterian":"food",
-    "burger":"food"
+    "burger":"food",
+
+    "cat":"animal",
+    "dog":"animal",
+    "cats":"animal",
+    "dogs":"animal",
+    "animals":"animal",
+    "birds":"animal",
+    "wildlife":"animal",
+    "nature":"animal"
 
 };
 

@@ -79,8 +79,8 @@ function makeAGuess(data){
     selected_list = ["🏀","⚾️","⚽️","⛹️‍♂️","🎾"];
   }
 
-  else if (data == 'family'){
-    selected_list = ["👨‍👨‍👧","🤰🏻","👨‍👩‍👧","👵🏻","👶🏽"];
+  else if (data == 'animal'){
+    selected_list = ["🐶","🙀","🦁","🐙","🐬"];
   }
  
 }
@@ -102,7 +102,7 @@ function draw() {
   textAlign(LEFT);
   text(reply, 125, 130,150)
   textSize(30)
-  text("Tell me something about Apple, Covid, sports, music, family, or food!", width-300, 130,260)
+  text("Tell me something about Apple, Covid, sports, music, animals, or food!", width-300, 130,260)
 
   pop();
   
