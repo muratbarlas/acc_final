@@ -26,7 +26,10 @@ function setup() {
   //speechRec.start(true, false); //continues and interum
 
   // set up socket
-  socket = io.connect('http://localhost:3000');
+  //socket = io.connect('http://localhost:3000');
+  socket = io.connect('https://emoji-cam.herokuapp.com/');
+
+  
   socket.on('guess', makeAGuess);
 
   slider = createSlider(7,30, 0, 1);
