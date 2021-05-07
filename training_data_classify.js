@@ -32,27 +32,23 @@ var trends = {
     "Pfizer": "covid",
     "Johnson and Johnson": "covid",
     "Covid-19":"covid",
+    "covid-19":"covid",
     "covid":"covid",
-    
     "sports":"sports",
     "basketball":"sports",
     "soccer":"sports",
     "football":"sports",
     "baseball":"sports",
-
     "music":"music",
     "pop":"music",
     "rock":"music",
     "kpop":"music",
     "Camila Cabello":"music",
     "iHeartAwards":"music",
-
-
     "AppleEvent" : "apple",
     "ipad":"apple",
     "macbook":"apple",
     "iphone":"apple",
-
     "cooking": "food",
     "starbucks":"food",
     "baking":"food",
@@ -60,7 +56,6 @@ var trends = {
     "vegan":"food",
     "vegeterian":"food",
     "burger":"food",
-
     "cat":"animal",
     "dog":"animal",
     "cats":"animal",
@@ -89,7 +84,7 @@ for( let [key, value] of Object.entries(trends)){
             }
             index++;
             // if we have completed all of the 'trends'
-            if(index == 35){  // equal to number of elements in var trends
+            if(index == 36){  // equal to number of elements in var trends
                 // confirm your classifier works as expected
                 var try_it = "new ipad got released";
                 try_it.split(" ").join(", ")                
